@@ -35,11 +35,6 @@ void AMovingPlatform::SetNewDirection(double max, double min, double& current, d
         direction = 1;
         current = min;
     }
-    if (overshoot > 0)
-    {
-        auto const name = GetName();
-        UE_LOG(LogTemp, Warning, TEXT("Platform '%s' overshot by %f"), *name, overshoot);
-    }
 }
 
 void AMovingPlatform::CorrectDirectionsAndLocation(FVector& currentLocation)
