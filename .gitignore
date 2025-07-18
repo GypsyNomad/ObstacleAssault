@@ -4,6 +4,9 @@ DerivedDataCache/
 Intermediate/
 Saved/
 
+# Ignore packaged files
+Build/
+
 # Ignore Visual Studio files
 .vs/
 .vscode/
